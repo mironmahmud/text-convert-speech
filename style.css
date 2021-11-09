@@ -1,0 +1,95 @@
+:root {
+    --body: darkslategrey;
+    --form: #b3e0f5;
+    --header: #222222;
+    --label: #333333;
+    --common: #ffffff;
+    --textarea: #444444;
+    --select: #444444;
+    --button: #0a4d4d;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background: var(--body);
+    height: 100vh;
+} 
+
+form {
+    width: 400px;
+    padding: 30px 30px;
+    border-radius: 8px;
+    background: var(--form);
+}
+
+form :where(textarea, select, button) {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: var(--common);
+}
+
+header {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: var(--header);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div {
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    display: block;
+    text-transform: capitalize;
+    color: var(--label);
+}
+
+textarea {
+    height: 120px;
+    padding: 15px 15px;
+    letter-spacing: -0.3px;
+    font-size: 17px;
+    font-weight: 400;
+    resize: none;
+    color: var(--textarea);
+}
+
+select {
+    font-size: 15px;
+    line-height: 1.5em;
+    padding-right: 15px;
+    color: var(--select);
+    border: 15px solid var(--common);
+    cursor: pointer;
+}
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--common);
+    background: var(--button);
+    cursor: pointer;
+    text-transform: capitalize;
+}
